@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/consumirapipaises.js"></script>
+    <script src="../js/utilidades.js"></script>
+    <script src="../js/consumirapimodenas.js"></script>
+    
+</head>
+<body>
+
+    <select id="selectPaises" onclick="mostrarPaisSeleccionado()">
+        <option value="">Escoger un Paies</option>
+    </select>
+
+    <select id="selectMonedas" onclick="mostrarMonedasSeleccionada()">
+        <option value="">Escoger una Moneda</option>
+    </select>
+
+    <table id="tablaPaises" border="1">
+        <tr>
+            <th>Nombre Paies</th>
+            <th>Capital</th>
+            <th>Region</th>
+            <th>Moneda</th>
+        </tr>
+    </table>
+
+    <script>
+        poblarDatosPaises();
+        poblarDatosMonedas();
+    </script>
+    
+</body>
+</html>
